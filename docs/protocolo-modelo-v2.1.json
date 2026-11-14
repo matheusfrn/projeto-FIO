@@ -1,0 +1,92 @@
+{
+  "protocol_version": "2.1.0",
+  "data_scope": "jan-mar/2025; mesmos seis casos de demonstração reservados em v1",
+  "model_selection_data": "somente development do split_manifest v1",
+  "historical_holdout_role": "regressão previamente inspecionada; não é teste cego novo",
+  "seed": 42,
+  "development_evaluation": {
+    "stratified_folds": 3,
+    "temporal_windows": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "customer_group_folds": 3,
+    "calibration_fraction_within_training": 0.2,
+    "calibration_method": "sigmoid com dados separados do ajuste da rede e prevalência natural"
+  },
+  "candidate": {
+    "hidden_layer_sizes": [
+      16
+    ],
+    "max_iter": 250,
+    "alpha": 0.001,
+    "early_stopping": false,
+    "external_score_dropout": "sete combinações com ao menos um score presente, somente no ajuste da rede",
+    "class_balance": "oversampling só no treino, razão positivo/negativo 0.10",
+    "categorical_features": "MCC e categorias codificadas nominalmente dentro do modelo",
+    "pickle_runtime": "somente sklearn, numpy, shap e biblioteca padrão",
+    "input_features": [
+      "amount",
+      "fraud_score",
+      "visa_fraud_score",
+      "mc_fraud_score",
+      "mcc",
+      "tipo_transacao",
+      "modalidade_transacao",
+      "pos_environment",
+      "currency_code"
+    ]
+  },
+  "baselines": [
+    "prior",
+    "fraud_score",
+    "max_external_scores",
+    "regra de um corte aprendida no treino",
+    "logistic_regression"
+  ],
+  "operating_policy": {
+    "high_priority_max_fpr_development": 0.001,
+    "review_queue_max_fpr_development": 0.005,
+    "status": "orçamentos técnicos provisórios, não custos aprovados pelo negócio",
+    "threshold_selection": "predições out-of-fold de desenvolvimento, nunca holdout",
+    "minimum_external_scores": 1,
+    "without_external_scores": "abster e devolver erro explícito de dados insuficientes"
+  },
+  "promotion_checks": {
+    "null_representation_max_score_difference": 1e-12,
+    "fresh_process_reload": true,
+    "shap_additivity_absolute_error": 0.000001,
+    "development_mean_ap_minimum": 0.99,
+    "development_max_ap_regret_vs_max_baseline": 0.002,
+    "historical_regression_ap_minimum": 0.9753787878787876,
+    "historical_regression_recall_minimum": 0.9545454545454546,
+    "historical_single_score_outage_recall_minimum": 0.9,
+    "all_scores_unavailable_must_abstain": true
+  },
+  "shap": {
+    "reference": "amostra estratificada de 256 registros originais de ajuste, ponderada pela prevalência original",
+    "stability_reference_seeds": [
+      11,
+      23,
+      37
+    ],
+    "method": "KernelExplainer, saída escalar calibrada, link identity",
+    "explanation_features": "nove features originais; expansão nominal ocorre dentro do modelo"
+  },
+  "limitations": [
+    "Dados sintéticos, poucos positivos e teste antigo já inspecionado.",
+    "Não declarar certificação de produção ou independência dos scores externos.",
+    "Não escolher arquitetura, cortes ou calibração a partir do holdout histórico.",
+    "currency_code preenchido contém somente BRL; não há validação de generalização para outras moedas."
+  ],
+  "frozen_before_v2_1_experiments": true,
+  "parent_protocol": "docs/protocolo-modelo-v2.json",
+  "change_reason": "Issue #1: incluir currency_code no contrato, no ajuste e na explicabilidade; manter arquitetura, splits e metas anteriores.",
+  "model_version": "v2.1.0"
+}

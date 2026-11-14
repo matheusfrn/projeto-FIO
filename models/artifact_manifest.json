@@ -1,0 +1,20 @@
+{
+  "model_version": "v2.1.0",
+  "artifact_schema_version": 2,
+  "sha256": {
+    "model_v1.pkl": "04739c2af0feae620597914be16e5faf4cdeb77f5701d717fabc89f452d0052c",
+    "pipeline_v1.pkl": "d0f6369cf300c5f40f3e267e1566d6b5e0374c1e31baef693e572f54055269db",
+    "explainer_v1.pkl": "69d6844668b330689dafd5d22015efcf0c9048e7d0b84d1dd5192f65934d6f7e",
+    "feature_names.json": "9eda8f7822b857b07af726ff5d5ea2ad89413d8a204ddacb95200465a2860f74",
+    "thresholds.json": "69b336a4212f8251d41093fbf226f626508f7b2031a6935f4fc9f6f37b9fa5f2",
+    "metrics.json": "cf0d25f0cbfc43fa7284215756eccb058222478a5ebf7239c143c56e500ae8ba",
+    "protocol.json": "b2f74e9b7cdc87088af852f454afb7cc02f4baa5ff8498eb3f3922c46d154862",
+    "model_card.md": "809cf19c3902a96146c4c82948624b42af709bdd6ef5028c77bca135383d5d92",
+    "validation_report.json": "6a1fad4a34a907e6be1c25cc652bc3f93810898d5e11aa10aad00083bd13407e",
+    "scoring_validation.json": "76c0afe91172196d023135b0f79f2ab3837a4bb134ca6a6919762777da7e276d",
+    "explanation_examples.md": "7b4a6db876c27b9d990ee29c7defac1354be557c8812c621cf47acccd7b05816",
+    "example_transactions.json": "fc6ba51b975c3f1718300edf132667bc75c45246f899ade370237256929b9751"
+  },
+  "fresh_process_validation": true,
+  "release_validation_passed": true
+}

@@ -1,0 +1,22 @@
+{
+  "description": "6 fraudes reservadas antes dos splits (D7). Não usadas em treino/calibração/background.",
+  "seed": 42,
+  "n": 6,
+  "event_external_ids": [
+    "EVT_SYN_000094500",
+    "EVT_SYN_000006299",
+    "EVT_SYN_000054143",
+    "EVT_SYN_000049973",
+    "EVT_SYN_000013550",
+    "EVT_SYN_000057495"
+  ],
+  "source_rows": [
+    94500,
+    6299,
+    54143,
+    49973,
+    13550,
+    57495
+  ],
+  "selection": "IDs fornecidos ou amostra determinística antes dos splits; ver protocolo"
+}

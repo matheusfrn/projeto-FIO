@@ -1,0 +1,11 @@
+[
+  "amount",
+  "fraud_score",
+  "visa_fraud_score",
+  "mc_fraud_score",
+  "mcc",
+  "tipo_transacao",
+  "modalidade_transacao",
+  "pos_environment",
+  "currency_code"
+]

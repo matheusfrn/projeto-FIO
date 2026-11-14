@@ -1,0 +1,19 @@
+{
+  "baixo": 0.4726704064105727,
+  "alto": 0.9285622983956004,
+  "model_version": "v2.1.0",
+  "artifact_schema_version": 2,
+  "selection_source": "development_out_of_fold",
+  "operating_targets": {
+    "review_recall": 0.99,
+    "high_recall": 0.95,
+    "review_max_fpr": 0.005,
+    "high_max_fpr": 0.001,
+    "business_approved": false
+  },
+  "input_policy": {
+    "min_external_scores": 1,
+    "without_scores": "abstain",
+    "degraded_with_missing_scores": true
+  }
+}

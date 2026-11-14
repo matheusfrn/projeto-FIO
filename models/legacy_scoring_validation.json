@@ -1,0 +1,447 @@
+{
+  "service_commit": "bcd0d72a61a06401d4a35a7b5d6de836d0cdcec6",
+  "service_modified": false,
+  "fresh_process": true,
+  "results": [
+    {
+      "event_external_id": "EVT_SYN_000094500",
+      "fraud_score_model": 0.9499999349765224,
+      "risk_level": "alto",
+      "top_factors": [
+        {
+          "feature": "fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.5644696143869211,
+          "value": 773.0
+        },
+        {
+          "feature": "mc_fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.22126519112866086,
+          "value": 744.0
+        },
+        {
+          "feature": "visa_fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.0959034606047133,
+          "value": null
+        },
+        {
+          "feature": "amount",
+          "direction": "aumenta_risco",
+          "shap_value": 0.04641296736887905,
+          "value": 149.58
+        },
+        {
+          "feature": "tipo_transacao",
+          "direction": "aumenta_risco",
+          "shap_value": 0.023622334792097424,
+          "value": "credito"
+        }
+      ],
+      "model_version": "v2.1.0",
+      "mock_mode": false,
+      "elapsed_seconds": 2.3960104290017625
+    },
+    {
+      "event_external_id": "EVT_SYN_000006299",
+      "fraud_score_model": 0.9500000224304177,
+      "risk_level": "alto",
+      "top_factors": [
+        {
+          "feature": "visa_fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.3806351398374941,
+          "value": 918.0
+        },
+        {
+          "feature": "mc_fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.2675840719696671,
+          "value": 824.0
+        },
+        {
+          "feature": "fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.22197537142430906,
+          "value": 737.0
+        },
+        {
+          "feature": "amount",
+          "direction": "aumenta_risco",
+          "shap_value": 0.06711822460568365,
+          "value": 341.79
+        },
+        {
+          "feature": "tipo_transacao",
+          "direction": "neutro",
+          "shap_value": 0.009520452132952589,
+          "value": "credito"
+        }
+      ],
+      "model_version": "v2.1.0",
+      "mock_mode": false,
+      "elapsed_seconds": 0.5830027069969219
+    },
+    {
+      "event_external_id": "EVT_SYN_000054143",
+      "fraud_score_model": 0.9500000224313265,
+      "risk_level": "alto",
+      "top_factors": [
+        {
+          "feature": "visa_fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.39995021802178315,
+          "value": 970.0
+        },
+        {
+          "feature": "fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.39896701756304775,
+          "value": 840.0
+        },
+        {
+          "feature": "mc_fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.09287820035205564,
+          "value": 739.0
+        },
+        {
+          "feature": "amount",
+          "direction": "aumenta_risco",
+          "shap_value": 0.04089668846579144,
+          "value": 310.47
+        },
+        {
+          "feature": "tipo_transacao",
+          "direction": "aumenta_risco",
+          "shap_value": 0.011725152012510063,
+          "value": "credito"
+        }
+      ],
+      "model_version": "v2.1.0",
+      "mock_mode": false,
+      "elapsed_seconds": 0.5927516489973641
+    },
+    {
+      "event_external_id": "EVT_SYN_000049973",
+      "fraud_score_model": 0.9500000224320381,
+      "risk_level": "alto",
+      "top_factors": [
+        {
+          "feature": "fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.347270146766162,
+          "value": 999.0
+        },
+        {
+          "feature": "visa_fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.33361046678055967,
+          "value": 890.0
+        },
+        {
+          "feature": "mc_fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.22102322988953205,
+          "value": 826.0
+        },
+        {
+          "feature": "tipo_transacao",
+          "direction": "aumenta_risco",
+          "shap_value": 0.018495641979043215,
+          "value": "credito"
+        },
+        {
+          "feature": "modalidade_transacao",
+          "direction": "aumenta_risco",
+          "shap_value": 0.011756152706805188,
+          "value": "cartao_nao_presente"
+        }
+      ],
+      "model_version": "v2.1.0",
+      "mock_mode": false,
+      "elapsed_seconds": 0.5998530750002828
+    },
+    {
+      "event_external_id": "EVT_SYN_000013550",
+      "fraud_score_model": 0.9500000219544774,
+      "risk_level": "alto",
+      "top_factors": [
+        {
+          "feature": "fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.556272517807983,
+          "value": 928.0
+        },
+        {
+          "feature": "visa_fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.2591966048601726,
+          "value": 765.0
+        },
+        {
+          "feature": "mc_fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.10925271403456248,
+          "value": 698.0
+        },
+        {
+          "feature": "mcc",
+          "direction": "aumenta_risco",
+          "shap_value": 0.022719564980822005,
+          "value": "5812.0"
+        },
+        {
+          "feature": "amount",
+          "direction": "aumenta_risco",
+          "shap_value": 0.013825847149362193,
+          "value": 111.14
+        }
+      ],
+      "model_version": "v2.1.0",
+      "mock_mode": false,
+      "elapsed_seconds": 0.6310717659944203
+    },
+    {
+      "event_external_id": "EVT_SYN_000057495",
+      "fraud_score_model": 0.9499999933995603,
+      "risk_level": "alto",
+      "top_factors": [
+        {
+          "feature": "fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.5742660533020971,
+          "value": 799.0
+        },
+        {
+          "feature": "visa_fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.20871297445548334,
+          "value": 741.0
+        },
+        {
+          "feature": "mc_fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.14680598161854996,
+          "value": 699.0
+        },
+        {
+          "feature": "tipo_transacao",
+          "direction": "aumenta_risco",
+          "shap_value": 0.012908326720297559,
+          "value": "credito"
+        },
+        {
+          "feature": "amount",
+          "direction": "aumenta_risco",
+          "shap_value": 0.01290629476935004,
+          "value": 102.86
+        }
+      ],
+      "model_version": "v2.1.0",
+      "mock_mode": false,
+      "elapsed_seconds": 0.7973954159970162
+    },
+    {
+      "event_external_id": "EVT_SYN_000000037",
+      "fraud_score_model": 0.0001914932456468562,
+      "risk_level": "baixo",
+      "top_factors": [
+        {
+          "feature": "fraud_score",
+          "direction": "neutro",
+          "shap_value": -0.0012393837295396268,
+          "value": 333.0
+        },
+        {
+          "feature": "mc_fraud_score",
+          "direction": "neutro",
+          "shap_value": -0.0010401249845951813,
+          "value": 299.0
+        },
+        {
+          "feature": "visa_fraud_score",
+          "direction": "neutro",
+          "shap_value": -0.0008087553666906396,
+          "value": null
+        },
+        {
+          "feature": "amount",
+          "direction": "neutro",
+          "shap_value": -6.0887396844482665e-05,
+          "value": 10.37
+        },
+        {
+          "feature": "tipo_transacao",
+          "direction": "neutro",
+          "shap_value": -1.5671251514100474e-05,
+          "value": "debito"
+        }
+      ],
+      "model_version": "v2.1.0",
+      "mock_mode": false,
+      "elapsed_seconds": 0.6004832239996176
+    },
+    {
+      "event_external_id": "EVT_SYN_000000050",
+      "fraud_score_model": 0.00019148840463555176,
+      "risk_level": "baixo",
+      "top_factors": [
+        {
+          "feature": "fraud_score",
+          "direction": "neutro",
+          "shap_value": -0.0012201598685447454,
+          "value": 187.0
+        },
+        {
+          "feature": "visa_fraud_score",
+          "direction": "neutro",
+          "shap_value": -0.00102812968448778,
+          "value": 301.0
+        },
+        {
+          "feature": "mc_fraud_score",
+          "direction": "neutro",
+          "shap_value": -0.0008314044265597202,
+          "value": null
+        },
+        {
+          "feature": "tipo_transacao",
+          "direction": "neutro",
+          "shap_value": -3.057023312626769e-05,
+          "value": "debito"
+        },
+        {
+          "feature": "amount",
+          "direction": "neutro",
+          "shap_value": -2.479648464542692e-05,
+          "value": 98.67
+        }
+      ],
+      "model_version": "v2.1.0",
+      "mock_mode": false,
+      "elapsed_seconds": 1.019684518003487
+    },
+    {
+      "event_external_id": "EVT_SYN_000000003",
+      "fraud_score_model": 0.00019148765595011633,
+      "risk_level": "baixo",
+      "top_factors": [
+        {
+          "feature": "fraud_score",
+          "direction": "neutro",
+          "shap_value": -0.001166209705661419,
+          "value": 240.0
+        },
+        {
+          "feature": "visa_fraud_score",
+          "direction": "neutro",
+          "shap_value": -0.0010548004721838487,
+          "value": 169.0
+        },
+        {
+          "feature": "mc_fraud_score",
+          "direction": "neutro",
+          "shap_value": -0.0008919513213243385,
+          "value": 203.0
+        },
+        {
+          "feature": "amount",
+          "direction": "neutro",
+          "shap_value": -6.630454622515203e-05,
+          "value": 42.36
+        },
+        {
+          "feature": "mcc",
+          "direction": "neutro",
+          "shap_value": 4.724213835839702e-05,
+          "value": "5732.0"
+        }
+      ],
+      "model_version": "v2.1.0",
+      "mock_mode": false,
+      "elapsed_seconds": 0.5923320069996407
+    },
+    {
+      "event_external_id": "EVT_SYN_000000004",
+      "fraud_score_model": 0.00019148763511331793,
+      "risk_level": "baixo",
+      "top_factors": [
+        {
+          "feature": "fraud_score",
+          "direction": "neutro",
+          "shap_value": -0.0012792879397761523,
+          "value": 159.0
+        },
+        {
+          "feature": "visa_fraud_score",
+          "direction": "neutro",
+          "shap_value": -0.0009324590887900701,
+          "value": 155.0
+        },
+        {
+          "feature": "mc_fraud_score",
+          "direction": "neutro",
+          "shap_value": -0.0008003991704576862,
+          "value": 187.0
+        },
+        {
+          "feature": "amount",
+          "direction": "neutro",
+          "shap_value": -0.00011252582590729837,
+          "value": 11.24
+        },
+        {
+          "feature": "tipo_transacao",
+          "direction": "neutro",
+          "shap_value": -4.137012981835895e-05,
+          "value": "debito"
+        }
+      ],
+      "model_version": "v2.1.0",
+      "mock_mode": false,
+      "elapsed_seconds": 0.7433745000016643
+    },
+    {
+      "event_external_id": "EVT_SYN_000002372",
+      "fraud_score_model": 0.9500000219342911,
+      "risk_level": "alto",
+      "top_factors": [
+        {
+          "feature": "visa_fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.6284028656221345,
+          "value": 928.0
+        },
+        {
+          "feature": "mc_fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.16361154682680903,
+          "value": 710.0
+        },
+        {
+          "feature": "fraud_score",
+          "direction": "aumenta_risco",
+          "shap_value": 0.10335128529825244,
+          "value": null
+        },
+        {
+          "feature": "tipo_transacao",
+          "direction": "aumenta_risco",
+          "shap_value": 0.019040532578157014,
+          "value": "credito"
+        },
+        {
+          "feature": "modalidade_transacao",
+          "direction": "aumenta_risco",
+          "shap_value": 0.012519493694391521,
+          "value": "cartao_nao_presente"
+        }
+      ],
+      "model_version": "v2.1.0",
+      "mock_mode": false,
+      "elapsed_seconds": 0.5712088770014816
+    }
+  ]
+}
